@@ -1,28 +1,34 @@
 //
 // Created by: Madeleine Forgeron
-// Created on: April 2022
+// Created on: May 2022
 // This file contains the JS functions for index.html
 
 'use strict'
 /**
- * This function calculates if temp is hot or cold.
+ * This function calculates if you are old enough to watch certain movies.
  */
-function tempHotOrCold() {
-   	// initialize variables
-	let temperature = ""	
+function oldEnough() {
+   	// initialize constants
+  const MIN = 1
+  const MAX = 100
+  // initialize variables
+	let number = ""	
 	// get user input
-	let guess = parseFloat(document.getElementById('guess').value)
+	let age = parseInt(document.getElementById('age').value)
 
 
-  	// if guess equal or less then 9 it is cold
-	if (guess <= 9){
-		temperature = "It's cold Brrr"
-	} 
-	//if more then 9 it is hot	
-	else {
-		temperature = "IT'S HOT"
-	}
+  	// if age equal or more then 18 they are old enough to see an 18+ movie alone
+	if (age >= 18) {
+		number = "You can watch 18+ movies alone"
 
+    //if age equal or more then 13 they are old enough to see an 13+ movie alone
+	}	else if (age >= 13){
+    number = "You can watch 13+ movies alone"
+  }
+  // if they are younger then 13 they can see G or PG with an adult
+  else{
+    number = "You can watch G or PG movies with an adult"
+  }
   // display the results
-  document.getElementById('temperature').innerHTML = temperature
+  document.getElementById('number').innerHTML = number
 }

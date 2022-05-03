@@ -36,11 +36,11 @@
 <!-- enter table -->
 		<table>
 			<tr>
-				<td>
+				<td >
 					<h3>Enter your age</h3>
 					<form action="javascript:oldEnough()">						
-						<label for="guess">Age:</label>
-						<input type="number" step="1" min="1" id="guess" placeholder="Enter age"><br><br>
+						<label for="age">Age:</label>
+						<input class="inputClass" type="number" step="1" min="1" max="100" name="age" id="age" placeholder="Enter age"><br><br>
 						<input type="submit" value="Display results">
 					</form>
 				</td>
@@ -48,7 +48,7 @@
 		</table>
         <!-- div id -->
           <div id="answers">
-            <div id="temperature"></div>
+            <div id="number"></div>
           </div>
         </p>
       </main>

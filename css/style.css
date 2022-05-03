@@ -1,0 +1,24 @@
+body{
+  background-color:#F6DE85 ;
+}
+
+h1{
+  color:#DD1700 ;
+  background-color:#FFFFFF ;
+  padding:15px;
+}
+
+h3{
+  color:#DD1700 ;
+  background-color:#FFFFFF ;
+}
+
+label{
+  color:#DD1700 ;
+}
+div{
+   color:#DD1700;
+}
+.inputClass {
+    width: 200px;
+}
